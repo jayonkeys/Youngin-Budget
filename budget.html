@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youngin Budget - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=fredoka:wght@600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Youngin Budget</h1>
+        <p>Track your money, stay soft.</p>
+    </header>
+
+    <div class="container">
+        <h2>Your Budget Dashboard</h2>
+
+        <div class="budget-section">
+            <label for="income">Monthly Income (R)</label>
+            <input type="number" id="income" placeholder="Enter your income">
+        </div>
+
+        <div class="budget-section">
+            <h3>Expenses</h3>
+            <div class="expense-row">
+                <input type="text" class="expense-name" placeholder="Expense name">
+                <input type="number" class="expense-amount" placeholder="Amount (R)">
+            </div>
+            <button id="add-expense">Add Expense</button>
+        </div>
+
+        <div class="budget-summary">
+            <p>Total Expenses: <span id="total-expenses">R0.00</span></p>
+            <p>Remaining Balance: <span id="balance">R0.00</span></p>
+        </div>
+
+        <ul id="expenses-list"></ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Youngin Budget | Built by <a href="https://twitter.com/jayores">Jay Ores</a></p>
+    </footer>
+
+    <script src="budget.js"></script>
+</body>
+                  </html>
