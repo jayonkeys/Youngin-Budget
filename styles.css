@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fredoka, Sans-Serif;
+    background-color: #0f0f0f;
+    background-image: url(skr-skr-background.svg);
+    background-repeat: repeat;
+    background-size: 600px;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00ff88;
+    text-shadow: 2px 2px 0 #000;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* container */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    margin-top: 2rem;
+}
+
+/* button */
+.cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    color: #0f0f0f;
+    background: #00ff88;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #00cc6a;
+    transform: translateY(-2px);
+    
+}
+
+/* nav links */
+nav {
+    margin-top: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ff88;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00cc6a;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #888;
+}
+
+footer a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* contact page style */
+.contact-section {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    background: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #e65c50;
+}
+
+.hidden {
+    display: none;
+}
+
+#formResponse {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e0ffe0;
+    border: 1px solid #00cc00;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    .cta-button {
+        width: 100%;
+    }
+}
